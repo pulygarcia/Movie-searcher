@@ -22,7 +22,7 @@ function callApi() {
 
     spinner();
 
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=${movieName.value}`;
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&t=${movieName.value}`;
     fetch(url)
         .then(resultado => {
             return resultado.json();
